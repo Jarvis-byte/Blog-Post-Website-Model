@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
   position: relative;
 }
 .container {
-  width: 800px;
+  width: 1200px;
 
   margin: 0 auto;
 }
@@ -18,7 +19,6 @@ body {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
 }
 .post-header {
   margin-bottom: 40px;
@@ -27,8 +27,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 h1,
@@ -43,6 +42,18 @@ h1 {
 }
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -79,8 +90,9 @@ li:last-child {
 /*footer p {
   font-size: 16px;
 }*/
-.list-none {
+.related {
   list-style: none;
+  margin-left: 0;
 }
 
 a:link {
@@ -95,8 +107,8 @@ a:hover {
 }
 
 .post-img {
-  width: 50%;
-  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 nav a:link {
@@ -129,5 +141,17 @@ nav {
   float: right;
 }
 .clear {
+  clear: both;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+footer {
   clear: both;
 }
